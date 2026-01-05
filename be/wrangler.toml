@@ -1,0 +1,19 @@
+name = "cf-ai-tagent"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "CHAT_DO"
+class_name = "ChatDO"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["ChatDO"]
+
+[[workflows]]
+name = "memory-compaction"
+binding = "MEMORY_COMPACTION"
+class_name = "MemoryCompactionWorkflow"

@@ -1,0 +1,15 @@
+{
+  "name": "cf-ai-agent-be",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260103.0",
+    "typescript": "^5.5.0",
+    "wrangler": "^4.54.0"
+  }
+}
